@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"smart_garden\startup_stm32f103xb.o"
+"smart_garden\i2c-lcd.o"
+"smart_garden\i2c-sht30.o"
+"smart_garden\main.o"
+"smart_garden\stm32f1xx_it.o"
+"smart_garden\stm32f1xx_hal_msp.o"
+"smart_garden\stm32f1xx_hal_gpio_ex.o"
+"smart_garden\stm32f1xx_hal_i2c.o"
+"smart_garden\stm32f1xx_hal.o"
+"smart_garden\stm32f1xx_hal_rcc.o"
+"smart_garden\stm32f1xx_hal_rcc_ex.o"
+"smart_garden\stm32f1xx_hal_gpio.o"
+"smart_garden\stm32f1xx_hal_dma.o"
+"smart_garden\stm32f1xx_hal_cortex.o"
+"smart_garden\stm32f1xx_hal_pwr.o"
+"smart_garden\stm32f1xx_hal_flash.o"
+"smart_garden\stm32f1xx_hal_flash_ex.o"
+"smart_garden\stm32f1xx_hal_exti.o"
+"smart_garden\stm32f1xx_hal_tim.o"
+"smart_garden\stm32f1xx_hal_tim_ex.o"
+"smart_garden\stm32f1xx_hal_uart.o"
+"smart_garden\system_stm32f1xx.o"
+--strict --scatter "Smart_garden\Smart_garden.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Smart_garden.map" -o Smart_garden\Smart_garden.axf
