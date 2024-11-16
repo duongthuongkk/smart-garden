@@ -1,2 +1,9 @@
 # **An application of the smart garden to control temperature and humidity**
-The system can track temperature and humidity in real-time by combining STM32F103C8T6 and ESP8266. STM32 can read temperature and humidity from the GY-SHT30-D sensor module via I2C interfaces and communicate I2C with an LCD. Then, the data will be sent to ESP8266 by using UART interfaces and will be streamed on Blynk web.
+
+## Descriptions
+The system can track temperature and humidity in real-time situations and send data logs to the Blynk server.
+## Features
+- Use STM32 to read temperature and humidity from a GY-SHT30-D sensor module via I2C interfaces.
+- This data is stored in a buffer and it will be sent to LCD for displaying.
+- Use the UART protocol to communicate between STM32 and ESP8266 for transferring data logs.
+- The logs will be sent to the Blynk server for user management.
